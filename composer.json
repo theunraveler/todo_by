@@ -1,0 +1,23 @@
+{
+    "name": "theunraveler/todo_by",
+    "type": "library",
+    "description": "Add date-specific todos to your code",
+    "keywords": ["todo"],
+    "homepage": "http://github.com/theunraveler/todo-by",
+    "license": "MIT",
+    "authors": [
+        {"name": "Jake Bell", "email": "jake@theunraveler.com"}
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": { "TheUnraveler\\TodoBy": "src/" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
