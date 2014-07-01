@@ -12,8 +12,16 @@ class Todo
             return;
         }
 
-        if ($date instanceof \DateTime) {
-            $date = $date->format('U');
+        switch (true) {
+            case $date instanceof \DateTime:
+                $date = $date->format('U');
+                break;
+            case is_int($date):
+                break;
+            default:
+                $date = new \DateTime($date);
+                $date = $date->format('U');
+                break;
         }
 
         if (time() < $date) {

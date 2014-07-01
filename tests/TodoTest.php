@@ -41,7 +41,8 @@ class TodoTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array(time() - 100),
-            array(new \DateTime('10 minutes ago'))
+            array(new \DateTime('10 minutes ago')),
+            array('10 minutes ago')
         );
     }
 
@@ -49,7 +50,8 @@ class TodoTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array(time() + 100),
-            array(new \DateTime('+ 10 minutes'))
+            array(new \DateTime('+ 10 minutes')),
+            array('+ 10 minutes')
         );
     }
 }
