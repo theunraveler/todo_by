@@ -3,6 +3,8 @@ Todo By
 
 This is a PHP implementation of the `do_by` Rubygem (https://github.com/andyw8/do_by). It's for adding auto-expiring TODO notes to a project.
 
+[![Build Status](https://secure.travis-ci.org/theunraveler/todo_by.png)](http://travis-ci.org/theunraveler/todo_by)
+
 Usage
 -----
 
