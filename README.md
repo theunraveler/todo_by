@@ -23,4 +23,13 @@ Todo::disable();
 new Todo('Implement feature X', time()); // Expiration date can be set with a timestamp,
 new Todo('Implement feature Y', new \DateTime('now')); // ...a DateTime object,
 new Todo('Implement feature Z', '+ 2 weeks'); // ...or anything parsable by new \DateTime.
+
+// Alternatively...
+Todo::create('Implement feature AA', '+ 2 weeks');
 ```
+
+Tests
+-----
+
+To run unit tests, first install dependencies (`composer install`), then run
+PHPUnit (`bin/phpunit`).
