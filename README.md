@@ -5,6 +5,7 @@ This is a PHP implementation of the `do_by` Rubygem (https://github.com/andyw8/d
 
 [![Build Status](https://secure.travis-ci.org/theunraveler/todo_by.png)](http://travis-ci.org/theunraveler/todo_by)
 [![Coverage Status](https://coveralls.io/repos/theunraveler/todo_by/badge.png?branch=master)](https://coveralls.io/r/theunraveler/todo_by?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/theunraveler/todo_by/v/stable.svg)](https://packagist.org/packages/theunraveler/todo_by)
 
 Usage
 -----
