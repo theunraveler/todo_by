@@ -6,26 +6,40 @@ class TodoExpiredException extends \RuntimeException
 {
     protected $expiredDate;
 
-    public function setExpiredDate($date)
+    /**
+     * Set the expiration date.
+     *
+     * @param DateTime $date
+     *
+     * @return self
+     */
+    public function setExpiredDate(\DateTime $date)
     {
-        if ($date instanceof \DateTime) {
-            $date = $date->format('U');
-        }
-
         $this->expireDate = $date;
+        return $this;
     }
 
+    /**
+     * Gets the expiration date.
+     *
+     * @return DateTime
+     */
     public function getExpiredDate()
     {
         return $this->expireDate;
     }
 
+    /**
+     * Implements __toString().
+     *
+     * @return string
+     */
     public function __toString()
     {
         return sprintf(
             'The todo "%s" is expired as of %s! Fix it now!',
             $this->getMessage(),
-            date('n/j/y \\a\\t g:ia', $this->getExpiredDate())
+            $this->getExpiredDate()->format('n/j/y \\a\\t g:ia')
         );
     }
 }
