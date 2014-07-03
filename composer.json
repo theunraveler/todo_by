@@ -12,7 +12,8 @@
         "php": ">=5.3.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "satooshi/php-coveralls": "*"
     },
     "autoload": {
         "psr-0": { "TheUnraveler\\TodoBy": "src/" }
