@@ -15,7 +15,7 @@ class TodoExpiredException extends \RuntimeException
      */
     public function setExpiredDate(\DateTime $date)
     {
-        $this->expireDate = $date;
+        $this->expiredDate = $date;
         return $this;
     }
 
@@ -26,7 +26,7 @@ class TodoExpiredException extends \RuntimeException
      */
     public function getExpiredDate()
     {
-        return $this->expireDate;
+        return $this->expiredDate;
     }
 
     /**
