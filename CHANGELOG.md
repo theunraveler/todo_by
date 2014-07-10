@@ -1,3 +1,8 @@
+v1.1.1
+------
+
+* Fixed TodoExpiredException::$expiredDate accessor typo.
+
 v1.1.0
 ------
 
