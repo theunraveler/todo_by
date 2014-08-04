@@ -107,9 +107,7 @@ class Todo
             return;
         }
 
-        $expiry = $this->getExpirationDate();
-
-        if (!$expiry || $expiry > new \DateTime('now')) {
+        if (!($expiry = $this->getExpirationDate()) || $expiry > new \DateTime('now')) {
             return;
         }
 
@@ -133,10 +131,10 @@ class Todo
             return \DateTime::createFromFormat('U', $date);
         }
 
-        if (!($date instanceof \DateTime)) {
-            return new \DateTime($date);
+        if ($date instanceof \DateTime) {
+            return $date;
         }
 
-        return $date;
+        return new \DateTime($date);
     }
 }
